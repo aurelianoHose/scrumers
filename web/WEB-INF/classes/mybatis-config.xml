@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <typeAlias alias="User" type="com.scrumers.entity.User" />
+        <typeAlias alias="Role" type="com.scrumers.entity.Role" />
+        <typeAlias alias="Team" type="com.scrumers.entity.Team" />
+        <typeAlias alias="Task" type="com.scrumers.entity.Task" />
+        <typeAlias alias="Story" type="com.scrumers.entity.Story" />
+        <typeAlias alias="Product" type="com.scrumers.entity.Product" />
+        <typeAlias alias="Organization" type="com.scrumers.entity.Organization" />
+        <typeAlias alias="ProductView" type="com.scrumers.entity.ProductView" />
+        <typeAlias alias="TeamMember" type="com.scrumers.entity.TeamMember" />
+        <typeAlias alias="Iteration" type="com.scrumers.entity.Iteration" />
+        <typeAlias alias="PlotData" type="com.scrumers.entity.PlotData" />
+        <typeAlias alias="Comment" type="com.scrumers.entity.Comment"/>
+    </typeAliases>
+    <mappers>
+        <mapper resource="com/scrumers/dao/mybatis/User.xml" />
+        <mapper resource="com/scrumers/dao/mybatis/Role.xml" />
+        <mapper resource="com/scrumers/dao/mybatis/Team.xml" />
+        <mapper resource="com/scrumers/dao/mybatis/Task.xml" />
+        <mapper resource="com/scrumers/dao/mybatis/Story.xml" />
+        <mapper resource="com/scrumers/dao/mybatis/Product.xml" />
+        <mapper resource="com/scrumers/dao/mybatis/Iteration.xml" />
+        <mapper resource="com/scrumers/dao/mybatis/Organization.xml" />
+    </mappers>
+</configuration>
